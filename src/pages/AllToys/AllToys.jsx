@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import SinglePruduct from "../../components/SingleProducts/SinglePruduct";
+import SingleProduct from "../../components/SingleProducts/SingleProduct";
 import Loading from "../Loading/Loading";
 import { AuthContext } from "../../context/AuthContext";
 import Aos from "aos";
@@ -74,7 +74,7 @@ const AllToys = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
         {priceSort.map((product, i) => (
           <div key={product.toyId} data-aos="zoom-in" data-aos-delay={i * 100}>
-            <SinglePruduct product={product} />
+            <SingleProduct product={product} />
           </div>
         ))}
       </div>

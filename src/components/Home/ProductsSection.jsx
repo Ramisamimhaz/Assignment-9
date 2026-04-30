@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import SinglePruduct from "../SingleProducts/SinglePruduct";
+import SingleProduct from "../SingleProducts/SingleProduct.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -37,7 +37,7 @@ const ProductsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4">
         {sliceProducts.slice(1, 9).map((product, i) => (
           <div key={product.toyId} data-aos="zoom-in" data-aos-delay={i * 100}>
-            <SinglePruduct product={product} />
+            <SingleProduct product={product} />
           </div>
         ))}
       </div>

@@ -7,7 +7,7 @@ import SignIn from "../auth/SignIn";
 import SignUp from "../auth/SignUp";
 import SingleToys from "../pages/AllToys/SingleToys";
 import Loading from "../pages/Loading/Loading";
-import PriaviteRoute from "../priviteRoute/PriaviteRoute";
+import PriviteRoute from "../priviteRoute/PrivateRoute";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Forget from "../auth/Forget";
 import Contacts from "../pages/Contacts/Contacts";
