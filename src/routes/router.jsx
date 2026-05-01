@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home";
 import Profile from "../pages/Profile/Profile";
@@ -7,7 +7,7 @@ import SignIn from "../auth/SignIn";
 import SignUp from "../auth/SignUp";
 import SingleToys from "../pages/AllToys/SingleToys";
 import Loading from "../pages/Loading/Loading";
-import PriviteRoute from "../priviteRoute/PrivateRoute";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Forget from "../auth/Forget";
 import Contacts from "../pages/Contacts/Contacts";
@@ -27,9 +27,9 @@ export const router = createBrowserRouter([
       {
         path: "/profile",
         element: (
-          <PriaviteRoute>
+          <PrivateRoute>
             <Profile />
-          </PriaviteRoute>
+          </PrivateRoute>
         ),
       },
       {
