@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar, FaBoxOpen } from "react-icons/fa"; // FaBoxOpen আইকনটি সুন্দর দেখাবে
+import { FaStar, FaBoxOpen } from "react-icons/fa"; 
 import { Link } from "react-router-dom";
 
 const SingleProduct = ({ product }) => {
